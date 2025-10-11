@@ -14,7 +14,7 @@
 
 <body>
     <!-- implentacion del bootstrap-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -55,14 +55,21 @@
             </div>
         </div>
     </nav>
-    <!--ocupacion de navbar Text -->
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <span class="navbar-text">
-                Los mejores juegos
-            </span>
+
+    <main class="container my-5">
+        <h2 class="text-center text-light mb-4"> 🎮 Los mejores videojuegos </h2>
+
+        <!-- Input para filtrar -->
+        <div class="mb-4 text-center">
+            <input id="buscador" type="text" class="form-control w-50 mx-auto" placeholder="Buscar juego por nombre...">
         </div>
-    </nav>
+
+        <!-- Contenedor de tarjetas -->
+        <div class="row" id="juegos-container"></div>
+    </main>
+
+
+    
 
 
 
