@@ -5,12 +5,45 @@ html, body {
 }
 
 body {
-  background-color: #1c1e22;
-  color: #f8f9fa;
+   background-color: #F8E8EE; 
+  color: #3A3A3A; 
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}     
+
+.navbar{
+  background-color:  #A8D8EA;
+}
+
+.navbar .navbar-brand{
+  color: #3a3a3a;
+  font-weight: bold; 
+}    
+
+.btn-primary {
+  background-color: #FBC4AB;
+  border: none;
+  color: #3A3A3A;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #F4978E;
+  color: white;
+}   
+
+.card {
+  background-color: #A8D8EA; /* Azul pastel */
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 main {
@@ -18,13 +51,32 @@ main {
 }
 
 footer {
-  border-top: 1px solid #333;
+  border-top: 1px solid #ccc;
   font-size: 0.9rem;
   padding: 1rem 0;
-  background-color: #1c1e22; /* para que combine con el fondo, o cambia según quieras */
+  background-color: #A8D8EA; /* para que combine con el fondo, o cambia según quieras */
 }
 
 .card img {
   height: 180px;
   object-fit: cover;
+   border-radius: 8px;
+}  
+
+.btn-outline-success {
+  background: linear-gradient(135deg, #A8D8EA, #FBC4AB);
+  border: none;
+  color: #3A3A3A;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Efecto hover */
+.btn-outline-success:hover {
+  background: linear-gradient(135deg, #FBC4AB, #A8D8EA);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
