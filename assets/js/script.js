@@ -69,32 +69,3 @@ cards.forEach((card, index) => {
 });
 
 
-// aca creamos un filtro dinamico en el DOM
-
-
-// Creamos un input de búsqueda dinámicamente
-const searchInput = document.createElement("input");
-
-// Asigna el placeholder que verá el usuario
-searchInput.placeholder = "Filtrar tarjetas por gato/sonrisa/abrazo/guiño/baile/palmada";
-
-// Agrega clases de Bootstrap para estilo
-searchInput.classList.add("form-control", "my-3");
-
-// Inserta el input justo antes del contenedor de las cards
-document.querySelector("main .row").insertAdjacentElement("beforebegin", searchInput);
-
-// Escucha el evento "keyup" para filtrar las cards en tiempo real
-searchInput.addEventListener("keyup", () => {
-  // Convierte el texto ingresado a minúsculas para comparación
-  const text = searchInput.value.toLowerCase();
-
-  // Recorre todas las cards
-  cards.forEach((card) => {
-    // Obtiene todo el contenido de texto de la card
-    const content = card.textContent.toLowerCase();
-
-    // Si el texto buscado está en la card, se muestra; si no, se oculta
-    card.parentElement.style.display = content.includes(text) ? "" : "none";
-  });
-});
