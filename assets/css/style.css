@@ -18,7 +18,7 @@ body {
   background-color: #A8D8EA;
 }
 
-.navbar .navbar-brand {
+#navbar .navbar-brand {
   color: #3a3a3a;
   font-weight: bold;
 }
